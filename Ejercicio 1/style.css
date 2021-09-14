@@ -1,0 +1,42 @@
+.col{
+    margin-bottom: 10px;
+
+   
+}
+
+.container{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 100px;
+    width: 30%;
+    height: 250px
+
+}
+
+#input1{
+    width: 60px;
+    margin-left: 10px;
+    text-align: center;
+}
+#input2{
+    width: 60px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#colresultado{
+    background-color: cadetblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width:80px;
+    height: 56px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 5px;
+    align-items: center;
+
+}
+
+
