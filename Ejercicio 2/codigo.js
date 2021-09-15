@@ -5,11 +5,15 @@ var btnResta = document.getElementById("btnResta");
 /* Obtenemos los dos input y los almacenamos en variables "inputUno" y "inputDos" */
 var inputUno = document.getElementById("input-uno");
 var inputDos = document.getElementById("input-dos");
+
+var mensaje = document.getElementById("error");
+
 // Añadimos el evento click a la variable "btn"
 btn.addEventListener("click", function () {
     /* Obtenemos el valor de cada input accediendo a su atributo "value" */
     var n1 = inputUno.value;
     var n2 = inputDos.value;
+    mensaje.textContent = ""
 /* Llamamos a una función que permite realizar la suma de los números y los mostramos al usuario" */ resultado.innerHTML = suma(n1, n2);
 });
 /* Función que retorna la suma de dos números */
@@ -23,6 +27,7 @@ btnResta.addEventListener("click", function () {
     var n1 = inputUno.value;
     var n2 = inputDos.value;
     resultado.innerHTML = resta(n1, n2);
+    mensaje.textContent = ""
 });
 
 function resta(n1, n2) {
@@ -33,6 +38,7 @@ btnMult.addEventListener("click", function () {
     var n1 = inputUno.value;
     var n2 = inputDos.value;
     resultado.innerHTML = mult(n1, n2);
+    mensaje.textContent = ""
 });
 
 function mult(n1, n2) {
@@ -46,6 +52,25 @@ btnDiv.addEventListener("click", function () {
 })
 
 function div(n1, n2) {
-    return parseInt(n1) / parseInt(n2);
+
+    if (n2 == 0) {
+        mensaje.textContent = "ERROR, división por cero"
+    } else {
+        return parseInt(n1) / parseInt(n2);
+    }
+
 }
+
+inputUno.addEventListener("click", function () {
+    mensaje.textContent = ""
+
+})
+
+inputDos.addEventListener("click", function () {
+    mensaje.textContent = ""
+})
+
+//revisar este comentario = commit realizado
+
+
 
