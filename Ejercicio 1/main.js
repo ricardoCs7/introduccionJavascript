@@ -9,8 +9,10 @@ btn.addEventListener("click", function () {
     var n1 = input1.value;
     var n2 = input2.value;
     resultado.innerHTML = random(n1, n2);
-
+    
 })
+
+
 
 function random(n1, n2) {
 
@@ -23,6 +25,8 @@ function random(n1, n2) {
     }
     return Math.round(Math.random() * (max - min) + parseInt(min));
 }
+
+
 
 
 

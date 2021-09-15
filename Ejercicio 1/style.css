@@ -9,7 +9,8 @@
     margin-top: 20px;
     padding-top: 100px;
     width: 30%;
-    height: 250px
+    height: 250px;
+    margin-bottom: 15px;
 
 }
 
@@ -24,7 +25,7 @@
     text-align: center;
 }
 
-#colresultado{
+#resultado{
     background-color: cadetblue;
     margin-left: auto;
     margin-right: auto;
